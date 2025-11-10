@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: #0a0a0a;
+  overflow-x: hidden;
+}
+
+#bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.certificate-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.certificate-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ff4b4b;
+}
+
+.certificate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.certificate-container img {
+  width: 90%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 80, 80, 0.3);
+}
+
+.cert-desc {
+  max-width: 700px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.cert-desc ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 25px;
+  background: #ff4b4b;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #ff6b6b;
+}
+.certificate-container {
+  max-width: 850px;
+  margin: 120px auto 80px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 30px rgba(255, 80, 80, 0.15);
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+}
+
+.certificate-container h1 {
+  color: #ff5050;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.certificate-img {
+  width: 100%;
+  max-width: 750px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 25px;
+  box-shadow: 0 0 25px rgba(255, 80, 80, 0.2);
+}
+
+/* Text */
+.certificate-container p {
+  color: #ddd;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  background: #ff5050;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #ff5050;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Animation
+=========================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+  .certificate-container {
+    padding: 25px;
+    margin: 100px 20px;
+  }
+
+  .certificate-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .certificate-container p {
+    font-size: 0.95rem;
+  }
+}

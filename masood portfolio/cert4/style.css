@@ -1,0 +1,119 @@
+/* ===========================
+   Global Styles
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Canvas Background (Stars / Particles) */
+#bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #0a0a0a;
+}
+
+/* ===========================
+   Certificate Content
+=========================== */
+.certificate-container {
+  max-width: 850px;
+  margin: 120px auto 80px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 30px rgba(255, 80, 80, 0.15);
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+}
+
+.certificate-container h1 {
+  color: #ff5050;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.certificate-img {
+  width: 100%;
+  max-width: 750px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 25px;
+  box-shadow: 0 0 25px rgba(255, 80, 80, 0.2);
+}
+
+/* Text */
+.certificate-container p {
+  color: #ddd;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  background: #ff5050;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #ff5050;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Animation
+=========================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+  .certificate-container {
+    padding: 25px;
+    margin: 100px 20px;
+  }
+
+  .certificate-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .certificate-container p {
+    font-size: 0.95rem;
+  }
+}
